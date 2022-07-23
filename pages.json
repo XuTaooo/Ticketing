@@ -1,0 +1,47 @@
+{
+	"easycom": {
+			"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "主页扫码"
+			}
+		}
+	    ,{
+            "path" : "pages/index/historyRecord",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "历史记录",
+                "enablePullDownRefresh": false//是否开启下拉刷新
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#303133",
+		"borderStyle": "black",
+		"backgroundColor": "#FAFAFA",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/icon/index.png",
+				"selectedIconPath": "static/icon/indexing.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/index/historyRecord",
+				"iconPath": "static/icon/historyRecord.png",
+				"selectedIconPath": "static/icon/historyRecording.png",
+				"text": "历史记录"
+			}
+		]
+	}
+}
