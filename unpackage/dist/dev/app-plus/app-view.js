@@ -2450,7 +2450,7 @@ var render = function() {
       _c("u-divider", { attrs: { _i: 2 } }),
       _c(
         "uni-table",
-        { attrs: { _i: 3 } },
+        { staticClass: _vm._$g(3, "sc"), attrs: { _i: 3 } },
         [
           _c(
             "uni-tr",
@@ -3816,7 +3816,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../HBuilderX/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 21);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\n.box1 {\n\tfont-size: 60rpx;\n}\n", ""]);
+exports.push([module.i, "\n.box1 {\n\tfont-size: 60rpx;\n}\n.table {\n\twidth: 100%;\n}\n", ""]);
 // Exports
 module.exports = exports;
 

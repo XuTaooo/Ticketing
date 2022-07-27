@@ -2,7 +2,7 @@
 const install = (Vue, vm) => {
 	// 此为自定义配置参数，具体参数见上方说明
 	Vue.prototype.$u.http.setConfig({
-		baseUrl: 'https://6d058e45.cpolar.cn',
+		baseUrl: 'https://6455b471.cpolar.cn',
 		loadingText: '努力加载中~',
 		loadingTime: 800,
 		// ......

@@ -13,8 +13,8 @@
             "path" : "pages/index/historyRecord",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "历史记录",
-                "enablePullDownRefresh": false//是否开启下拉刷新
+                "navigationBarTitleText": "历史记录"
+               
             }
             
         }

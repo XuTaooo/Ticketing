@@ -104,8 +104,9 @@
 						console.log(that.useTime)
 
 						//请求接口
-						uni.request({
-							url: `https://6d058e45.cpolar.cn/isUsed?code=${that.code}`,
+						// 门票是否使用
+						/* uni.request({
+							url: `https://6455b471.cpolar.cn/isUsed?code=${that.code}`,
 							method: 'POST',
 							header: {  
 							        'Content-Type': 'application/x-www-form-urlencoded'  
@@ -114,17 +115,30 @@
 								console.log(res.data);
 								console.log(that.code)
 							}
-						});
-						getMenu({ custom: { auth: true }}).then((res) => {
-							console.log(res,'请求成功')
-						}).catch((res) =>{
-							console.log(res,'请求失败')
-						})
-						// postMenu({'code':that.code},{ custom: { auth: true }}).then((res)=>{
-						// 	console.log(res,'请求成功')
-						// }).catch((res)=>{
-						// 	console.log(res,'请求失败')
-						// })
+						}); */
+						
+						// 新增门票信息
+						/* uni.request({
+							url: `https://6455b471.cpolar.cn/add?code=${that.code}`,
+							// data:{code:that.code},
+							method: 'POST', 
+							success: (res) => {
+								console.log(res.data);
+								console.log(that.code)
+							}
+						}); */
+						
+						// 检票请求
+						uni.request({
+							url: `https://6455b471.cpolar.cn/check?code=${that.code}`,
+							// data:{code:that.code},
+							method: 'POST', 
+							success: (res) => {
+								console.log(res.data);
+								console.log(that.code)
+							}
+						}); 
+						
 
 					},
 					fail: function(res) {
